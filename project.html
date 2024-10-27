@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positioning in CSS</title>
+    <style>
+        *{
+            background-color: aquamarine;
+            color:cadetblue;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            padding: 0;
+            margin-top: 40px;
+            color:black
+        }
+        h1{
+        color: coral;
+        text-align: center;
+        text-decoration: underline;
+        text-transform: uppercase;
+        }
+        div.sticky{
+        position:sticky;
+        top: 10px;
+        border:5px solid #FF00FF;
+        left: 10px;
+        width:200px
+        }
+        div.absolute{
+        position:absolute;
+        left:20px;
+        border: 5px  solid saddlebrown;
+        width: 200px;
+        }
+        div.relative{
+        position: relative;
+        right: 20px;
+        border: 5px solid #660000;
+        width: 100px;
+        }
+        div.fixed{
+        position:fixed;
+        top: 10px;
+        border:2px solid #00FF00;
+        left: 10px;
+        width:500px
+        }
+    </style>
+</head>
+<body>
+    <h1> Positioning</h1>
+    <hr color="red">
+    <div class="sticky">The line with sticky position.
+    </div>
+    <div class="absolute">The line with absolute position.
+    <div class="relative">The line with relative position.</div>
+    <small><div class="fixed">The line with fixed position.</div></small>
+    <br>
+</body>
+</html>
